@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create New Post</title>
+  <link rel="stylesheet" href="post.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">StackIt<span class="fe"></span></div>
+    <ul class="nav-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="post.html">Post</a></li>
+      <li><a href="account.html">Account</a></li>
+      <li><a href="#">Tags</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </nav>
+  
+  <div class="container">
+    <h1 class="page-title">Create New Post</h1>
+
+    <form class="post-form">
+      <div class="form-group">
+        <label for="title">Title *</label>
+        <input type="text" id="title" placeholder="Enter post title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="content">Content</label>
+        <textarea id="content" rows="10" placeholder="Write your post..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category *</label>
+        <select id="category" required>
+          <option value="">Select a category</option>
+          <option>News</option>
+          <option>Updates</option>
+          <option>Tech</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tags">Add Tags</label>
+        <input type="text" id="tags" placeholder="Add tags separated by commas">
+      </div>
+
+      <button type="submit" class="submit-button">Publish Post</button>
+    </form>
+  </div>
+  <script src="post.js"></script>
+</body>
+</html>
