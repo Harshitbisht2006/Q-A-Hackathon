@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StackIt | Ask Questions</title>
+  <link rel="stylesheet" href="hackathon.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">StackIt<span class="fe"></span></div>
+    <ul class="nav-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="post.html">Post</a></li>
+      <li><a href="account.html">Account</a></li>
+      <li><a href="#">Tags</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </nav>
+
+  <main class="container">
+    <header>
+      <h1>Ask a Question</h1>
+      <p>Get answers from a community of front-end developers and experts.</p>
+    </header>
+
+    <section class="filter-bar">
+      <input type="text" id="searchFilter" placeholder="Search topics or tags..." />
+    </section>
+
+    <section class="sample-questions">
+      <h2>Popular Questions</h2>
+      <ul id="sampleList">
+        <li data-question="How do I center a div in CSS?">How do I center a div in CSS?</li>
+        <li data-question="What is Flexbox and how does it work?">What is Flexbox and how does it work?</li>
+        <li data-question="Difference between var, let, and const?">Difference between var, let, and const?</li>
+      </ul>
+    </section>
+
+    <section class="ask-box">
+      <form id="questionForm">
+        <input type="text" id="questionInput" placeholder="Type your question..." required />
+        <button type="submit">Ask</button>
+      </form>
+      <div class="answer-box" id="answerBox"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 StackIt. All rights reserved.</p>
+    <p>Built for curious minds. Inspired by Quora.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
